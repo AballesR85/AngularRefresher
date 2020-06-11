@@ -7,7 +7,8 @@
           <div class="card-body">
             <h5 class="card-title">{{poke.name}}</h5>
             <p class="card-text">{{poke.url}}</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <!-- añadimos click y función (en pokemons.components.ts) correspondiente para mostrar cada elemento al pulsar-->
+            <a class="btn btn-primary" (click)="showPoke(poke.name)">Ver Pokemon</a>
           </div>
         </div>
 

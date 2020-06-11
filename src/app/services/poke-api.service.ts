@@ -12,4 +12,9 @@ export class PokeAPIService {
   getPokemons (){
     return this.http.get(`${PokeAPI.url}pokemon`);
   }
+
+  getPokemon(id){
+    return this.http.get(`${PokeAPI.url}pokemon/${id}`);
+  }
+
 }
